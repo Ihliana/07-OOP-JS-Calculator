@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+body {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+.container {
+  box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+  padding: .8em;
+  border-radius: 15px;
+}
+
+/* Display */
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+  #result {
+      padding: 0.4em;
+      font-size: 1rem;
+      margin: 1em auto;
+    }
+
+  #reset {
+      align-self: center;
+      border: none;
+      padding: 1.5em;
+      margin-left: 2em;
+      font-weight: bold;
+      border-radius: 5px;
+
+    }
+
+
+
+  /* Buttons */
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  input {
+        margin: 1em 0;
+    }
+
+  .btn {
+      width: 49%;
+      height: auto;
+      font-size: 1.3rem;
+      padding: .6em;
+      border: none;
+      border-radius: 5px;
+  }
+
+
+    /* Colors */
+
+    .orange {
+      background-color: #FFC300;
+    }
+
+    .red {
+      background-color: #FF5733 ;
+    }
+
+    .blue {
+      background-color: lightblue;
+    }
+
+    .white {
+      color: #fff;
+    }
+
+
+    @media screen and (min-width: 550px){
+
+      #top{
+        flex-direction: row;
+      }
+
+      #result {
+          padding:1.4em;
+          font-size: 1rem;
+          flex-grow: 2;
+
+        }
+
+      .btn {
+        width: 24%;
+        height: auto;
+        font-size: 1.5rem;
+    }
+
+}
